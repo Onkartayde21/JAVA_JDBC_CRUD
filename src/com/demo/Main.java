@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
-
+//Before compiling the file uncomment the below code block to create database and table with fields
 /*        DB d =new DB();
         d.createDB();
         d.createTable();*/
@@ -64,7 +64,7 @@ public class Main {
                     System.out.println("Enter id and updated designation of employee");
                     int id = sc.nextInt();
                     String designation = sc.nextLine();
-                    EmployeeDao.updateEmployeeEmail(id, designation);
+                    EmployeeDao.updateEmployeeDesignation(id, designation);
                 } else if (dop == 2) {
                     System.out.println("Enter salary and updated designation of employee");
                     int salary = sc.nextInt();
