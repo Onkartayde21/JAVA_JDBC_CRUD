@@ -8,14 +8,7 @@ public class Employee {
     private int salary;
 
     //Constructor
-    public Employee(int id, String name, String email, String designation, int salary) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.designation = designation;
-        this.salary = salary;
 
-    }
 
     //Getter Setter
     public int getId() {return id;}
@@ -32,6 +25,15 @@ public class Employee {
 
     public int getSalary() {return salary;}
     public void setSalary(int salary) {this.salary = salary;}
+
+    public Employee(int id, String name, String email, String designation, int salary) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.designation = designation;
+        this.salary = salary;
+
+    }
 
     //tostring
     @Override

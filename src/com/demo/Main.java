@@ -24,10 +24,10 @@ public class Main {
         if(operation == 1){
             System.out.println("Enter Employee Id, Employee Name,  Email id, Designation, Salary");
             int id = sc.nextInt();
+            sc.nextLine();
             String name = sc.nextLine();
             String email = sc.nextLine();
             String designation = sc.nextLine();
-            sc.nextLine();
             int salary = sc.nextInt();
             Employee employee= new Employee(id, name, email, designation, salary);
             EmployeeDao.createEmployee(employee);
@@ -55,6 +55,7 @@ public class Main {
             } else if (option == 2) {
                 System.out.println("Enter id and updated email of employee");
                 int id = sc.nextInt();
+                sc.nextLine();
                 String email = sc.nextLine();
                 EmployeeDao.updateEmployeeEmail(id, email);
             }else if (option == 3) {
@@ -68,6 +69,7 @@ public class Main {
                 } else if (dop == 2) {
                     System.out.println("Enter salary and updated designation of employee");
                     int salary = sc.nextInt();
+                    sc.nextLine();
                     String designation = sc.nextLine();
                     EmployeeDao.updateEmployeeDesignationusingSalary(salary, designation);
                 }else {
